@@ -12,6 +12,9 @@ class PartyTests(unittest.TestCase):
         # Is this a special method???
 
         self.client = party.app.test_client()
+        # setting self.client
+        # why is this .self? Is it because this is an instance instead of a set
+        # object??
         party.app.config['TESTING'] = True
 
     def test_homepage(self):
